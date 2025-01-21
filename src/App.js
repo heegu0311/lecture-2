@@ -15,8 +15,14 @@ function App() {
         const component = import( './components/ImageModal')
     }
 
+    const preloadImage = () => {
+        const image = new Image()
+        image.src = 'https://stillmed.olympic.org/media/Photos/2016/08/20/part-1/20-08-2016-Football-Men-01.jpg?interpolation=lanczos-none&resize=*:800'
+    }
+
     useEffect(() => {
         preloadImageModal()
+        preloadImage()
     }, []);
 
     return (
