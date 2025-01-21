@@ -21,8 +21,8 @@ function App() {
     }
 
     useEffect(() => {
-        preloadImageModal()
-        preloadImage()
+        // preloadImageModal()
+        // preloadImage()
     }, []);
 
     return (
@@ -31,7 +31,8 @@ function App() {
             <InfoTable />
             <ButtonModal onClick={() => { setShowModal(true) }}
             onMouseEnter={() => {
-                // preloadImageModal()
+                preloadImageModal()
+                preloadImage()
             }}>올림픽 사진 보기</ButtonModal>
             <SurveyChart />
             <Footer />
